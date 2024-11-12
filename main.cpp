@@ -52,7 +52,6 @@ public:
             std::swap(m_cryptedArray[i], m_cryptedArray[swapIndices[i]]);
         }
     }
-
     /*
         Возвращает расшифрованный пароль как строку
     */
@@ -75,7 +74,7 @@ public:
         }
         std::cout << std::endl;
     }
-
+    
 private:
     std::vector<int> makeAsciiArray(const std::string& password) {
         std::vector<int> asciiArray(password.length());
